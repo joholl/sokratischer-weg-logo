@@ -33,7 +33,7 @@
               zip -r sokratischer_weg_logo.zip build/*
 
           - name: Publish Zip File
-            uses: actions/upload-artifact@v2
+            uses: actions/upload-artifact@v3
             with:
               name: sokratischer-weg-logo
               path: sokratischer_weg_logo.zip
