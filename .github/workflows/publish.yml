@@ -6,7 +6,7 @@
           - main
 
     jobs:
-      zip_and_publish:
+      publish:
         runs-on: ubuntu-latest
 
         steps:
