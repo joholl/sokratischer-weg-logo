@@ -35,5 +35,5 @@
           - name: Publish Zip File
             uses: actions/upload-artifact@v3
             with:
-              name: sokratischer-weg-logo
+              name: Sokratischer Weg Logo
               path: sokratischer_weg_logo.zip
