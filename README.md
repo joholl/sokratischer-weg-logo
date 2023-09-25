@@ -1,4 +1,4 @@
-# Sokratischer Weg - logo
+# Sokratischer Weg - logo!
 
 Render the Sokratischer Weg logo.
 
