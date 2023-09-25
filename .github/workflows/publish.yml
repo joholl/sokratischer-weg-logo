@@ -21,14 +21,11 @@
           - name: Install inkscape
             run: sudo apt-get install inkscape
 
-          - name: Create python venv
+          - name: Render
             run: |
               python -m venv venv
               source venv/bin/activate
               pip install -r requirements.txt
-
-          - name: Render
-            run: |
               python src/render.py -o build data/*
 
           - name: Zip results
