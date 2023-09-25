@@ -42,3 +42,6 @@ For resolutions, you could pass e.g.
 You can download the latest logo as rendered `.png` files: go to the [Github
 Actions](https://github.com/joholl/sokratischer-weg-logo/actions/workflows/publish.yml),
 select the latest run and download _Sokratischer Weg Logo_.
+
+When a tag is pushed, GitHub Actions will also automatically release the
+rendered logo.
