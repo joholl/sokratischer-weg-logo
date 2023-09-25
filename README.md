@@ -1,3 +1,5 @@
+[![Github Actions Badge](https://github.com/joholl/sokratischer-weg-logo/actions/workflows/publish.yml/badge.svg)](https://github.com/joholl/sokratischer-weg-logo/actions/workflows/publish.yml)
+
 # Sokratischer Weg - logo!
 
 Render the Sokratischer Weg logo.
@@ -34,3 +36,9 @@ For resolutions, you could pass e.g.
 * `x64`: scales the width to 64 pixels, resulting in a 64x36 `.png` file
 * `64x`: scales the height to 64 pixels, resulting in a 115x64 `.png` file
 * `64x64`: scales the width to 64 pixels and centers the graphic vertically, resulting in a 64x64 `.png` file
+
+## Download Logo
+
+You can download the latest logo as rendered `.png` files: go to the [Github
+Actions](https://github.com/joholl/sokratischer-weg-logo/actions/workflows/publish.yml),
+select the latest run and download _Sokratischer Weg Logo_.
