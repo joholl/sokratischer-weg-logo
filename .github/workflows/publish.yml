@@ -1,0 +1,42 @@
+    name: Generate and publish logo
+
+    on:
+      push:
+        branches:
+          - main
+
+    jobs:
+      zip_and_publish:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Checkout Repository
+            uses: actions/checkout@v3
+
+          - name: Set up Python
+            uses: actions/setup-python@v4
+            with:
+              python-version: 3.x
+
+          - name: Install inkscape
+            run: sudo apt-get install inkscape
+
+          - name: Create python venv
+            run: |
+              python -m venv venv
+              source venv/bin/activate
+              pip install -r requirements.txt
+
+          - name: Render
+            run: |
+              python src/render.py -o build data/*
+
+          - name: Zip results
+            run: |
+              zip -r sokratischer_weg_logo.zip build/*
+
+          - name: Publish Zip File
+            uses: actions/upload-artifact@v2
+            with:
+              name: sokratischer-weg-logo
+              path: sokratischer_weg_logo.zip
