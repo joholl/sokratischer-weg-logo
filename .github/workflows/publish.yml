@@ -1,9 +1,9 @@
     name: Generate and publish logo
 
-    on:
-      push:
-        branches:
-          - main
+    on: push
+
+    permissions:
+      contents: write
 
     jobs:
       publish:
@@ -37,3 +37,9 @@
             with:
               name: Sokratischer Weg Logo
               path: sokratischer_weg_logo.zip
+
+          - name: Release
+            uses: softprops/action-gh-release@v1
+            if: startsWith(github.ref, 'refs/tags/')
+            with:
+              files: sokratischer_weg_logo.zip
