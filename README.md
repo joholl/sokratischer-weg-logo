@@ -33,8 +33,8 @@ render.py [-h] [--output-dir OUTPUT_DIR] [--resolutions RESOLUTIONS [RESOLUTIONS
 ```
 
 For resolutions, you could pass e.g.
-* `x64`: scales the width to 64 pixels, resulting in a 64x36 `.png` file
-* `64x`: scales the height to 64 pixels, resulting in a 115x64 `.png` file
+* `64x`: scales the width to 64 pixels, resulting in a 64x36 `.png` file
+* `x64`: scales the height to 64 pixels, resulting in a 115x64 `.png` file
 * `64x64`: scales the width to 64 pixels and centers the graphic vertically, resulting in a 64x64 `.png` file
 
 ## Download Logo
